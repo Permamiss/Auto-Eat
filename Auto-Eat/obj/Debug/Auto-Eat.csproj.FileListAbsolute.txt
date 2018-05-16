@@ -1,0 +1,4 @@
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\bin\Debug\Auto-Eat.dll
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\bin\Debug\Auto-Eat.pdb
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\obj\Debug\Auto-Eat.dll
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\obj\Debug\Auto-Eat.pdb

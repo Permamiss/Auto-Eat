@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartProgram>D:\SteamLibrary\steamapps\common\Stardew Valley\StardewModdingAPI.exe</StartProgram>
+    <StartWorkingDirectory>D:\SteamLibrary\steamapps\common\Stardew Valley</StartWorkingDirectory>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <StartProgram>D:\SteamLibrary\steamapps\common\Stardew Valley\StardewModdingAPI.exe</StartProgram>
+    <StartWorkingDirectory>D:\SteamLibrary\steamapps\common\Stardew Valley</StartWorkingDirectory>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+</Project>

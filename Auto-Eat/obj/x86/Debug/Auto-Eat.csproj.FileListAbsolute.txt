@@ -1,0 +1,7 @@
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\bin\x86\Debug\Auto-Eat.dll
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\bin\x86\Debug\Auto-Eat.pdb
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\bin\x86\Debug\Netcode.dll
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\bin\x86\Debug\Netcode.pdb
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\obj\x86\Debug\Auto-Eat.csprojResolveAssemblyReference.cache
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\obj\x86\Debug\Auto-Eat.dll
+C:\Users\charl\Documents\Visual Studio 2017\Projects\Stardew Valley SMAPI Mods\Auto-Eat\Auto-Eat\obj\x86\Debug\Auto-Eat.pdb

@@ -38,8 +38,10 @@ namespace AutoEat
             if (eatAtAmount < 0.0f)
             {
                 eatAtAmount = 0.0f;
-                ModConfig fixConfig = new ModConfig();
-                fixConfig.StaminaThreshold = 0.0f;
+                ModConfig fixConfig = new ModConfig()
+                {
+                    StaminaThreshold = 0.0f
+                };
                 helper.WriteConfig(fixConfig);
             }
 
@@ -49,7 +51,7 @@ namespace AutoEat
             TimeEvents.AfterDayStarted += this.TimeEvents_AfterDayStarted;
         }
 
-        public static void clearOldestHUDMessage() //I may have stolen this idea from CJBok (props to them)
+        public static void ClearOldestHUDMessage() //I may have stolen this idea from CJBok (props to them)
         {
             firstCall = false; //we do this so that, as long as we check for firstCall to be true, this method will not be executed every single tick (if we did not do this, a message would be removed from the HUD every tick!)
             if (Game1.hudMessages.Count > 0) //if there is at least 1 message on the screen, then
@@ -62,15 +64,16 @@ namespace AutoEat
 
         private void SetStaminaThreshold(string command, string[] args)
         {
-            float newValue = (float)Double.Parse(args[0]);
+            float newValue = (float)double.Parse(args[0]);
 
             if (newValue < 0.0f || newValue >= Game1.player.MaxStamina) //don't allow the stamina threshold to be set outside the possible bounds
                 newValue = 0.0f;
 
             eatAtAmount = newValue;
-            ModConfig newConfig = new ModConfig();
-            newConfig.StaminaThreshold = newValue;
-
+            ModConfig newConfig = new ModConfig()
+            {
+                StaminaThreshold = newValue
+            };
             this.Helper.WriteConfig(newConfig);
 
             this.Monitor.Log($"OK, set the stamina threshold to {newValue}.");
@@ -99,7 +102,7 @@ namespace AutoEat
                     return;
                 }
                 if (firstCall) //if clearOldestHUDMessage has not been called yet, then
-                    clearOldestHUDMessage(); //get rid of the annoying over-exerted message without it noticeably popping up
+                    ClearOldestHUDMessage(); //get rid of the annoying over-exerted message without it noticeably popping up
                 if (eatingFood) //if already eating food, then ignore the rest of the method in order to prevent unnecessary loop
                     return;
                 Item cheapestFood = null; //currently set to "null" (aka none), as we have not found a food yet
@@ -133,7 +136,8 @@ namespace AutoEat
                 if (eatingFood) //if the player was eating food before, then:
                 {
                     eatingFood = false; //they are no longer eating, meaning the above checks will be performed once more if they hit 0 Energy again.
-                    Game1.player.exhausted = false; //forcing the game to make the player not over-exerted anymore since that's what this mod's goal was
+                    //Game1.player.exhausted = false; //old way of doing it
+                    Game1.player.exhausted.Value = false; //forcing the game to make the player not over-exerted anymore since that's what this mod's goal was
                     Game1.player.checkForExhaustion(Game1.player.Stamina); //forcing the game to make the player not over-exerted anymore since that's what this mod's goal was
                 }
             }

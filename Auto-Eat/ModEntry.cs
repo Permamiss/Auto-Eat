@@ -1,14 +1,9 @@
 using System;
 using StardewModdingAPI;
-using StardewModdingAPI.Events;
 using StardewValley;
 
 namespace AutoEat
 {
-    class ModConfig
-    {
-        public float StaminaThreshold { get; set; } = 0.0f;
-    }
     /// <summary>The mod entry point.</summary>
     public class ModEntry : Mod
     {
@@ -78,7 +73,7 @@ namespace AutoEat
 
             this.Monitor.Log($"OK, set the stamina threshold to {newValue}.");
         }
-        
+
         /// <summary>The method invoked when the player presses a keyboard button.</summary>
         /// <param name="sender">The event sender.</param>
         /// <param name="e">The event data.</param>

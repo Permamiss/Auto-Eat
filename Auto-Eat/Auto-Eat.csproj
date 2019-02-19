@@ -56,5 +56,8 @@
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="manifest.json" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,13 +1,9 @@
 {
   "Name": "Auto-Eat",
   "Author": "Permamiss",
-  "Version": {
-    "MajorVersion": 2,
-    "MinorVersion": 1,
-    "PatchVersion": 0,
-    "Build": ""
-  },
+  "Version": "2.1.0",
   "Description": "Eat food automatically upon running out of stamina",
   "UniqueID": "Permamiss.AutoEat",
-  "EntryDll": "Auto-Eat.dll"
+  "EntryDll": "Auto-Eat.dll",
+  "MinimumApiVersion": "2.10.2"
 }
